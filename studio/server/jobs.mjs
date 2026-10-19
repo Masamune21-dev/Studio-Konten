@@ -146,7 +146,7 @@ ${resultContract(job.id, true)}`;
       `Permintaan user:\n${i.instructions?.trim() || "(tidak ada catatan: buat versi terbaik dan paling enak ditonton dari rekamannya)"}`,
       opts.length ? `Yang dicentang user:\n${opts.map((o) => `- ${o}`).join("\n")}` : "",
       brand ? `Profil brand (akun resmi untuk ajakan follow):\n${brand}` : "",
-      `Langkah: buat proyek dari template (nama folder = slug judul), salin rekaman, npm run transcribe, baca out/transcript-*.txt, tulis src/edit.json, cek still dengan npm run frames -- --comp=${wide ? "EditWide" : "Edit"} <frame…> (frame 0 harus sudah berisi judul/visual, overlay tidak menutupi wajah orang di rekaman), render, lalu npm run qa:edit${i.duration ? ` -- --durasi=${i.duration}` : ""} dan perbaiki setiap ✗. Ringkas ⚠ yang tersisa di notes.`,
+      `Langkah: buat proyek dengan node ${ROOT}/scripts/new-project.mjs <slug judul> (template + file brand), salin rekaman, npm run transcribe, baca out/transcript-*.txt, tulis src/edit.json, cek still dengan npm run frames -- --comp=${wide ? "EditWide" : "Edit"} <frame…> (frame 0 harus sudah berisi judul/visual, overlay tidak menutupi wajah orang di rekaman), render, lalu npm run qa:edit${i.duration ? ` -- --durasi=${i.duration}` : ""} dan perbaiki setiap ✗. Ringkas ⚠ yang tersisa di notes.`,
       `${resultContract(job.id, wide)}\nTambahkan juga "orientation": "portrait" atau "landscape" (format hasilnya) di JSON itu.`,
     ]
       .filter(Boolean)
@@ -228,7 +228,7 @@ ${resultContract(job.id, true)}`;
       : i.pillar && i.pillar !== "brand"
         ? `Aturan kalau menyebut ${BRAND.name} (konten ini bukan promosi):\n${profileSections(["IDENTITAS", "KANAL RESMI", "NADA & GAYA", "ATURAN WAJIB"])}`
         : `Profil brand (sumber fakta, jangan mengarang di luar ini; tandai ilustrasi bila perlu):\n${brand}`,
-    `Buat proyek baru di ${ROOT}/<slug-singkat> dengan menyalin template skill, tanpa npm install di folder proyek (node_modules dipakai bersama di ${ROOT}). Verifikasi potongan suara dan cek frame sebelum render final, termasuk npm run check:crop (karakter tidak boleh terpotong di pinggir; setiap ✗ wajib diperbaiki); npm run render menulis ke ${OUTPUT}/<slug-singkat>.mp4 dan menormalkan keras suaranya. Setelah render, jalankan npm run qa${i.duration ? ` -- --durasi=${i.duration}` : ""} (skill video-tiktok, bagian QA): setiap ✗ wajib diperbaiki lalu render dan qa lagi sampai tidak ada ✗; ringkas ⚠ yang tersisa di notes.`,
+    `Buat proyek baru dengan node ${ROOT}/scripts/new-project.mjs <slug-singkat> (menyalin template skill dan file brand dari brand/template, lalu menulis src/brand.ts; jangan cp -R template sendiri), tanpa npm install di folder proyek (node_modules dipakai bersama di ${ROOT}). Verifikasi potongan suara dan cek frame sebelum render final, termasuk npm run check:crop (karakter tidak boleh terpotong di pinggir; setiap ✗ wajib diperbaiki); npm run render menulis ke ${OUTPUT}/<slug-singkat>.mp4 dan menormalkan keras suaranya. Setelah render, jalankan npm run qa${i.duration ? ` -- --durasi=${i.duration}` : ""} (skill video-tiktok, bagian QA): setiap ✗ wajib diperbaiki lalu render dan qa lagi sampai tidak ada ✗; ringkas ⚠ yang tersisa di notes.`,
     resultContract(job.id),
   ]
     .filter(Boolean)
