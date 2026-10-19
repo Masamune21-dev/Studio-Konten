@@ -1,0 +1,17 @@
+{
+  "_note": "Ejaan bunyi per suara. Kiri = teks asli (subtitle), kanan = yang dibacakan TTS. Kunci = id suara, atau prefix bahasa (mis. id-ID).",
+  "Puck": {
+    "CONTOH FIBER": "Contoh Fiber",
+    "AS64512": "A-S enam empat lima satu dua",
+    "Gbps": "Giga",
+    "ONU": "onu",
+    "QRIS": "kris"
+  },
+  "Leda": {
+    "CONTOH FIBER": "Contoh Fiber",
+    "AS64512": "A-S enam empat lima satu dua",
+    "Gbps": "Giga",
+    "ONU": "onu",
+    "QRIS": "kris"
+  }
+}

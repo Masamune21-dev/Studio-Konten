@@ -1,0 +1,183 @@
+{
+  "title": "CONTOH FIBER tips — Kenapa internet rame banget jam 8 malam?",
+  "brand": "CONTOH FIBER",
+  "engine": "gemini",
+  "voice": "Puck",
+  "style": "santai dan semangat, seperti kreator TikTok Indonesia yang ngobrol sama temannya",
+  "voices": {
+    "bayu": {
+      "voice": "Puck",
+      "style": "santai dan semangat, seperti kreator TikTok Indonesia yang ngobrol sama temannya"
+    },
+    "sari": {
+      "voice": "Leda",
+      "style": "ramah, ceria dan santai, seperti CS cewek muda Indonesia yang ngobrol akrab sama temannya"
+    }
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "kind": "clockHook",
+      "theme": "night",
+      "kicker": "JAM SIBUK",
+      "time": "20:00",
+      "lines": [
+        "Semua orang",
+        "online",
+        "barengan."
+      ],
+      "vo": "Bro, pernah ngerasa internet rame banget jam delapan malam? Ya wajar... jam segitu semua orang online barengan!",
+      "who": "bayu"
+    },
+    {
+      "id": "s02",
+      "kind": "dayCurve",
+      "theme": "cream",
+      "kicker": "POLA HARIAN",
+      "title": "Pemakaian internet",
+      "sub": "dalam sehari",
+      "vo": "Coba lihat pola pemakaian internet seharian. Pagi masih santai, siang naik dikit... terus malam, langsung melonjak!",
+      "who": "bayu"
+    },
+    {
+      "id": "s03",
+      "kind": "whoOnline",
+      "theme": "sun",
+      "kicker": "JAM 8 MALAM",
+      "title": "Lagi pada ngapain?",
+      "tiles": [
+        {
+          "label": "Nonton streaming",
+          "img": "nonton.png"
+        },
+        {
+          "label": "Main game",
+          "img": "game.png"
+        },
+        {
+          "label": "Video call",
+          "img": "videocall.png"
+        },
+        {
+          "label": "Scroll medsos",
+          "img": "medsos.png"
+        }
+      ],
+      "vo": "Iya, soalnya jam segitu orang udah pulang kerja dan sekolah. Ada yang nonton, main game, video call keluarga, scroll medsos... semuanya barengan.",
+      "who": "sari"
+    },
+    {
+      "id": "s04",
+      "kind": "road",
+      "theme": "coral",
+      "kicker": "IBARATNYA",
+      "lines": [
+        "Kayak jalan tol",
+        "jam pulang kantor"
+      ],
+      "vo": "Ibaratnya kayak jalan tol pas jam pulang kantor. Mobilnya banyak banget, jadi jalannya harus cukup lebar.",
+      "who": "sari"
+    },
+    {
+      "id": "s05",
+      "kind": "capacity",
+      "theme": "white",
+      "kicker": "KAPASITAS",
+      "lines": [
+        "Disiapin buat",
+        "jam paling",
+        "rame."
+      ],
+      "vo": "Nah, makanya kapasitas jaringan itu nggak disiapin buat jam sepi... tapi buat jam paling rame, plus ada cadangannya.",
+      "who": "bayu"
+    },
+    {
+      "id": "s06",
+      "kind": "backbone",
+      "theme": "night",
+      "kicker": "JARINGAN CONTOH FIBER",
+      "big": "20–50",
+      "unit": "Gbps",
+      "note": "kapasitas jaringan",
+      "nodes": [
+        "IIX",
+        "JKT-IX",
+        "BIX"
+      ],
+      "vo": "Di CONTOH FIBER, kapasitas jaringannya dua puluh sampai lima puluh Giga, nyambung ke tiga titik pertukaran internet di Jakarta, masing-masing sepuluh Giga.",
+      "who": "bayu"
+    },
+    {
+      "id": "s07",
+      "kind": "monitor",
+      "theme": "mint",
+      "kicker": "DIPANTAU 24/7",
+      "lines": [
+        "Dipantau",
+        "terus,",
+        "24 jam."
+      ],
+      "vo": "Terus jaringannya dipantau lewat NMS dua puluh empat jam. Jadi kalau ada yang nggak beres, tim langsung gerak.",
+      "who": "sari"
+    },
+    {
+      "id": "s08",
+      "kind": "homeTip",
+      "theme": "cobalt",
+      "kicker": "TIPS DI RUMAH",
+      "title": "Wi-Fi rumah juga dibagi",
+      "plans": [
+        {
+          "name": "Hemat",
+          "speed": "10",
+          "dev": "1–2"
+        },
+        {
+          "name": "Essential",
+          "speed": "15",
+          "dev": "1–3"
+        },
+        {
+          "name": "Premium",
+          "speed": "20",
+          "dev": "3–7",
+          "hot": true
+        },
+        {
+          "name": "Ultimate",
+          "speed": "30",
+          "dev": "7–10"
+        }
+      ],
+      "vo": "Tapi inget, Wi-Fi di rumah juga dibagi rame-rame. Kalau perangkatnya banyak, pilih paket yang pas sama jumlah perangkatnya ya.",
+      "who": "bayu"
+    },
+    {
+      "id": "s09",
+      "kind": "cta",
+      "theme": "sun",
+      "lines": [
+        "Simpen",
+        "dan bagikan",
+        "ke temanmu!"
+      ],
+      "chips": [
+        "Follow",
+        "Save",
+        "Share"
+      ],
+      "wa": "WA 0800-0000-0000",
+      "vo": "Simpen video ini, terus kirim ke temen kamu! Jangan lupa follow buat tips internet lainnya ya!",
+      "turns": [
+        {
+          "who": "bayu",
+          "vo": "Simpen video ini, terus kirim ke temen kamu!"
+        },
+        {
+          "who": "sari",
+          "vo": "Jangan lupa follow buat tips internet lainnya ya!"
+        }
+      ]
+    }
+  ]
+}

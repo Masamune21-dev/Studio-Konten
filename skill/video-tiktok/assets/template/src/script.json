@@ -1,0 +1,206 @@
+{
+  "title": "Contoh Fiber — promo brand (tipografi, warna-warni, karakter)",
+  "brand": "CONTOH FIBER",
+  "engine": "gemini",
+  "voice": "Puck",
+  "style": "santai dan semangat, seperti kreator TikTok Indonesia yang ngobrol sama temannya",
+  "look": {
+    "mode": "promo",
+    "tag": "INFO"
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "kind": "cover",
+      "theme": "cobalt",
+      "visual": "Sampul (components/Cover.tsx, mode promo): label seri CONTOH FIBER · INFO, judul '*Internet* kamu' + ekor serif 'siapa yang urus?', tiga chip di zona visual, host di kanan bawah (tambahkan \"host\" dengan pose anime dari public/img)",
+      "onscreen": [
+        "Internet kamu",
+        "yang ngurus",
+        "siapa?"
+      ],
+      "judul": [
+        "*Internet* kamu"
+      ],
+      "ekor": "siapa yang urus?",
+      "chips": [
+        {
+          "ikon": "router",
+          "teks": "jaringan"
+        },
+        {
+          "ikon": "monitor",
+          "teks": "NOC 24 jam"
+        },
+        {
+          "ikon": "wrench",
+          "teks": "teknisi"
+        }
+      ],
+      "vo": "Internet yang kamu pakai tiap hari... pernah kepikiran nggak, siapa sih yang ngurusin?"
+    },
+    {
+      "id": "s02",
+      "kind": "intro",
+      "theme": "night",
+      "visual": "Kata CONTOH / FIBER raksasa masuk dari kiri-kanan, 'di balik' serif, kartu logo CONTOH FIBER, teknisi dan CS muncul melambai",
+      "onscreen": [
+        "CONTOH",
+        "FIBER",
+        "di balik"
+      ],
+      "vo": "Kenalin, Contoh Fiber! Penyedia internet fiber optic lokal yang ngurus jaringannya sendiri."
+    },
+    {
+      "id": "s03",
+      "kind": "coverage",
+      "theme": "sun",
+      "visual": "PUSAT / TIMUR / BARAT bertumpuk geser bergantian dengan pin, polaroid kantor pusat, marquee bawah",
+      "onscreen": [
+        "Area layanan"
+      ],
+      "places": [
+        {
+          "name": "PUSAT",
+          "note": "kantor pusat"
+        },
+        {
+          "name": "TIMUR",
+          "note": "aktif"
+        },
+        {
+          "name": "BARAT",
+          "note": "aktif"
+        }
+      ],
+      "image": "img/kantor.webp",
+      "vo": "Jaringannya udah nyambung di kota pusat, wilayah timur, sampai barat... dan tiap bulan terus nambah!"
+    },
+    {
+      "id": "s04",
+      "kind": "backbone",
+      "origin": "PUSAT",
+      "theme": "night",
+      "visual": "AS64512 besar ala terminal, node pusat bercabang ke tiga node IX dengan label 10 Gbps, pulsa data mengalir",
+      "onscreen": [
+        "AS64512"
+      ],
+      "nodes": [
+        "IX-A",
+        "IX-B",
+        "IX-C"
+      ],
+      "vo": "Kita punya jaringan sendiri, AS64512, yang nyambung langsung ke tiga Internet Exchange. Masing-masing 10 Gbps!"
+    },
+    {
+      "id": "s05",
+      "kind": "ecosystem",
+      "theme": "white",
+      "visual": "Bento grid 6 ubin warna-warni (Billing, NMS, Gateway, Monitor, Absensi, Stok Gudang) muncul bergantian",
+      "onscreen": [
+        "Sistem buatan",
+        "sendiri"
+      ],
+      "apps": [
+        {
+          "name": "Billing",
+          "desc": "QRIS & VA",
+          "prop": "billing"
+        },
+        {
+          "name": "NMS",
+          "desc": "monitor OLT/ONU",
+          "prop": "nms"
+        },
+        {
+          "name": "Gateway",
+          "desc": "PPPoE & isolir",
+          "prop": "gateway"
+        },
+        {
+          "name": "Monitor",
+          "desc": "monitor backbone",
+          "prop": "pulse"
+        },
+        {
+          "name": "Absensi",
+          "desc": "absensi GPS",
+          "prop": "geo"
+        },
+        {
+          "name": "Stok Gudang",
+          "desc": "logistik FTTH",
+          "prop": "stock"
+        }
+      ],
+      "vo": "Semua dikelola pakai sistem buatan sendiri: billing, NMS, gateway, sampai monitor backbone. Full kontrol!"
+    },
+    {
+      "id": "s06",
+      "kind": "team",
+      "theme": "coral",
+      "visual": "Teknisi jempol dan CS pegang headset; tipografi raksasa LOKAL. dan 24/7. bergantian",
+      "onscreen": [
+        "LOKAL.",
+        "24/7."
+      ],
+      "vo": "Teknisinya orang lokal, siap survei ke rumah. CS-nya standby 24 jam. Ada gangguan? Langsung ditanganin!"
+    },
+    {
+      "id": "s07",
+      "kind": "stats",
+      "theme": "cream",
+      "visual": "Angka raksasa menghitung: 500+ pelanggan aktif, 99,5% uptime, garis bawah warna",
+      "onscreen": [
+        "Hasilnya?"
+      ],
+      "stats": [
+        {
+          "value": 500,
+          "suffix": "+",
+          "label": "pelanggan aktif"
+        },
+        {
+          "value": 99.5,
+          "suffix": "%",
+          "label": "uptime jaringan",
+          "decimals": 1
+        }
+      ],
+      "vo": "Hasilnya? Lebih dari lima ratus pelanggan aktif, dengan uptime jaringan 99,5 persen."
+    },
+    {
+      "id": "s08",
+      "kind": "offer",
+      "theme": "mint",
+      "visual": "'mulai' serif + 99rb raksasa, chip Unlimited / Tanpa FUP / Gratis pasang / Tanpa kontrak muncul bergantian, pelanggan cheer",
+      "onscreen": [
+        "mulai",
+        "99rb",
+        "/bulan"
+      ],
+      "chips": [
+        "Unlimited",
+        "Tanpa FUP",
+        "Gratis pasang",
+        "Tanpa kontrak"
+      ],
+      "vo": "Paketnya mulai 99 ribu sebulan. Unlimited, tanpa FUP, gratis pasang, dan tanpa kontrak!"
+    },
+    {
+      "id": "s09",
+      "kind": "cta",
+      "theme": "cobalt",
+      "visual": "Logo CONTOH FIBER, tagline 'Pilih yang lokal.' serif, tiga karakter berjajar, tombol daftar dan WhatsApp",
+      "onscreen": [
+        "Pilih yang",
+        "lokal."
+      ],
+      "cta": {
+        "url": "daftar.contohfiber.example",
+        "wa": "0800-0000-0000"
+      },
+      "vo": "Yuk, gabung bareng Contoh Fiber. Daftar sekarang, atau chat WhatsApp kita!"
+    }
+  ]
+}

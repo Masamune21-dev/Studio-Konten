@@ -1,0 +1,23 @@
+{
+  "name": "tiktok-video",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio",
+    "vo": "node --env-file-if-exists=../.env --env-file-if-exists=.env ../scripts/generate-vo.mjs",
+    "vo:reuse": "node --env-file-if-exists=../.env --env-file-if-exists=.env ../scripts/generate-vo-gemini.mjs --reuse",
+    "check": "node --env-file-if-exists=../.env --env-file-if-exists=.env ../scripts/check-vo.mjs",
+    "samples": "node --env-file-if-exists=../.env --env-file-if-exists=.env ../scripts/sample-gemini.mjs",
+    "sfx": "node ../scripts/sfx.mjs",
+    "render": "remotion render Video \"../output/$(basename \"$PWD\").mp4\" --codec=h264 --crf=18 && node ../scripts/loudness.mjs",
+    "render:yt": "remotion render VideoWide \"../output/$(basename \"$PWD\")-yt.mp4\" --codec=h264 --crf=18 && node ../scripts/loudness.mjs --yt",
+    "transcribe": "node ../scripts/transcribe.mjs",
+    "render:edit": "remotion render Edit \"../output/$(basename \"$PWD\").mp4\" --codec=h264 --crf=18 && node ../scripts/loudness.mjs",
+    "render:edit:yt": "remotion render EditWide \"../output/$(basename \"$PWD\")-yt.mp4\" --codec=h264 --crf=18 && node ../scripts/loudness.mjs --yt",
+    "check:crop": "node ../scripts/check-crop.mjs",
+    "loudness": "node ../scripts/loudness.mjs",
+    "qa": "node --env-file-if-exists=../.env ../scripts/qa.mjs",
+    "qa:edit": "node --env-file-if-exists=../.env ../scripts/qa-edit.mjs",
+    "ritme": "node ../scripts/ritme.mjs",
+    "frames": "node ../scripts/frames.mjs"
+  }
+}

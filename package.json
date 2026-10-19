@@ -1,0 +1,34 @@
+{
+  "name": "studio-konten-video",
+  "private": true,
+  "description": "Dependensi bersama semua proyek video Remotion di folder ini. Proyek video tidak punya node_modules sendiri; hasil render dikumpulkan di output/.",
+  "scripts": {
+    "postinstall": "remotion browser ensure"
+  },
+  "dependencies": {
+    "@react-three/fiber": "^9.8.1",
+    "@remotion/bundler": "^4.0.533",
+    "@remotion/cli": "^4.0.532",
+    "@remotion/effects": "^4.0.533",
+    "@remotion/google-fonts": "^4.0.532",
+    "@remotion/install-whisper-cpp": "4.0.533",
+    "@remotion/media": "^4.0.533",
+    "@remotion/media-utils": "^4.0.532",
+    "@remotion/motion-blur": "^4.0.533",
+    "@remotion/paths": "4.0.533",
+    "@remotion/renderer": "^4.0.533",
+    "@remotion/rough-notation": "^4.0.533",
+    "@remotion/three": "^4.0.533",
+    "@remotion/transitions": "^4.0.533",
+    "@types/react": "^19.3.0",
+    "lucide": "1.48.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "remotion": "^4.0.532",
+    "three": "^0.186.1",
+    "typescript": "^7.0.2"
+  },
+  "devDependencies": {
+    "@types/three": "^0.186.0"
+  }
+}

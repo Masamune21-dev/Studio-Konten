@@ -1,0 +1,177 @@
+{
+  "title": "ContohNMS — TikTok promo",
+  "engine": "gemini",
+  "voice": "Puck",
+  "style": "santai dan semangat, seperti kreator TikTok Indonesia yang ngobrol sama temannya",
+  "scenes": [
+    {
+      "id": "s01",
+      "kind": "hook",
+      "visual": "Teks besar kinetik di atas latar grid gelap, ikon terminal berkedip",
+      "onscreen": [
+        "Ratusan ONU.",
+        "Cek satu-satu",
+        "lewat Telnet?"
+      ],
+      "vo": "Pelanggan FTTH kamu udah ratusan... tapi masih ngecek ONU satu-satu lewat Telnet? Capek banget, kan!"
+    },
+    {
+      "id": "s02",
+      "kind": "intro",
+      "visual": "Logo ContohNMS muncul, screenshot halaman welcome di bingkai, badge Open Source / Gratis / MIT",
+      "onscreen": [
+        "ContohNMS"
+      ],
+      "badges": [
+        "Open Source",
+        "Gratis",
+        "MIT License"
+      ],
+      "image": "img/welcome.webp",
+      "vo": "Nah, coba deh ContohNMS. Aplikasi buat ngurus jaringan FTTH kamu, open source, dan... gratis!"
+    },
+    {
+      "id": "s03",
+      "kind": "vendors",
+      "visual": "Kartu vendor OLT muncul bergantian, lalu menyatu ke satu dashboard",
+      "onscreen": [
+        "Multi-vendor OLT"
+      ],
+      "items": [
+        "ZTE C300",
+        "ZTE C320",
+        "ZTE C600",
+        "C-Data GPON/EPON",
+        "HiOSO EPON"
+      ],
+      "vo": "OLT-nya macem-macem? Santai. ZTE C300, C320, C600, C-Data, sampai HiOSO, semuanya masuk satu dashboard."
+    },
+    {
+      "id": "s04",
+      "kind": "screen",
+      "visual": "Screenshot dashboard, kamera geser dari kartu statistik ke grafik status ONU",
+      "onscreen": [
+        "Dashboard real-time"
+      ],
+      "image": "img/dashboard.webp",
+      "pan": [
+        {
+          "x": 0.42,
+          "y": 0.25,
+          "zoom": 2.3
+        },
+        {
+          "x": 0.67,
+          "y": 0.5,
+          "zoom": 2.0
+        }
+      ],
+      "vo": "Buka dashboard-nya, langsung kelihatan: berapa OLT, berapa ONU yang online, sama alarm yang lagi aktif. Real-time!"
+    },
+    {
+      "id": "s05",
+      "kind": "screen",
+      "visual": "Screenshot monitoring ONU, zoom ke tabel status dan RX power",
+      "onscreen": [
+        "Monitoring ONU",
+        "LOS · Power off · RX power 30 hari"
+      ],
+      "image": "img/onumonitoring.webp",
+      "pan": [
+        {
+          "x": 0.66,
+          "y": 0.38,
+          "zoom": 1.8
+        },
+        {
+          "x": 0.47,
+          "y": 0.72,
+          "zoom": 1.8
+        }
+      ],
+      "vo": "Mau pantau ONU di semua OLT? Bisa. Ada status LOS, power off, sampai riwayat redaman tiga puluh hari ke belakang."
+    },
+    {
+      "id": "s06",
+      "kind": "actions",
+      "visual": "Screenshot daftar ONU per port, lalu tombol aksi muncul satu per satu",
+      "onscreen": [
+        "Kelola dari browser"
+      ],
+      "image": "img/portonus.webp",
+      "items": [
+        "Registrasi ONU baru",
+        "Reboot & rename",
+        "Telnet di browser"
+      ],
+      "vo": "Ada ONU baru? Daftarin aja langsung dari browser. Mau reboot, rename, atau buka Telnet? Tinggal klik."
+    },
+    {
+      "id": "s07",
+      "kind": "alarm",
+      "visual": "Screenshot alarm center, notifikasi Telegram dan Android meluncur masuk",
+      "onscreen": [
+        "Alarm otomatis"
+      ],
+      "image": "img/alarms.webp",
+      "notifications": [
+        {
+          "app": "Telegram",
+          "title": "🔴 ONU offline",
+          "body": "OLT-SENTRAL · Slot 1 / PON 5 · 4 ONU di ODP-12"
+        },
+        {
+          "app": "ContohNMS",
+          "title": "Port PON down",
+          "body": "OLT-UTARA · Slot 3 / PON 6"
+        }
+      ],
+      "vo": "Terus kalau ada gangguan, alarmnya langsung masuk ke Telegram sama HP Android kamu."
+    },
+    {
+      "id": "s08",
+      "kind": "screen",
+      "visual": "Screenshot peta ONU, zoom pelan ke kumpulan pin ODP dan jalur kabel",
+      "onscreen": [
+        "Peta pelanggan & ODP"
+      ],
+      "image": "img/map.webp",
+      "pan": [
+        {
+          "x": 0.5,
+          "y": 0.5,
+          "zoom": 1.9
+        },
+        {
+          "x": 0.5,
+          "y": 0.62,
+          "zoom": 3.0
+        }
+      ],
+      "vo": "Pelanggan sama ODP juga kelihatan di peta, lengkap sama jalur kabelnya. Keren, kan?"
+    },
+    {
+      "id": "s09",
+      "kind": "install",
+      "visual": "Jendela terminal, perintah diketik, lalu muncul centang hijau",
+      "onscreen": [
+        "Install 1 perintah"
+      ],
+      "commands": [
+        "cp .env.docker.example .env",
+        "docker compose up -d --build"
+      ],
+      "vo": "Instalnya? Gampang banget. Cukup satu perintah Docker, NMS kamu langsung jalan."
+    },
+    {
+      "id": "s10",
+      "kind": "cta",
+      "visual": "Logo GitHub, nama repo, tombol Star berdenyut",
+      "onscreen": [
+        "github.com/contoh",
+        "ContohNMS"
+      ],
+      "vo": "Langsung cek repo-nya di GitHub, ContohNMS. Kalau bermanfaat, jangan lupa kasih bintang, ya!"
+    }
+  ]
+}

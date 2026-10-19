@@ -1,0 +1,58 @@
+{
+  "_": "Cover modes of the cover system (components/Cover.tsx, since 19 Oct 2026). One source for the template (design.ts), npm run qa (scripts/qa.mjs) and the Studio (server/looks.mjs). bg/fg must equal THEMES[theme] in design.ts. A brand can ship its own copy in brand/template/src/components/cover-modes.json.",
+  "modes": {
+    "hitungan": {
+      "name": "Hitungan",
+      "hint": "angka vs angka: Mbps, GB, ping, baterai, harga",
+      "theme": "night",
+      "bg": "#0B1B3A",
+      "fg": "#FFFFFF",
+      "accent": "#3BD5F5",
+      "accent2": "#FFD23F",
+      "tagBg": "#3BD5F5",
+      "tagFg": "#0B1B3A",
+      "tag": "HITUNGAN",
+      "pillars": ["internet", "teknologi"]
+    },
+    "tips": {
+      "name": "Tips",
+      "hint": "setting HP/router, aplikasi, AI, life hack",
+      "theme": "cream",
+      "bg": "#F3EFE6",
+      "fg": "#0E1A3A",
+      "accent": "#2B50FF",
+      "accent2": "#FF5A4D",
+      "tagBg": "#2B50FF",
+      "tagFg": "#FFFFFF",
+      "tag": "TIPS",
+      "pillars": ["perangkat", "produktif", "ai"]
+    },
+    "aman": {
+      "name": "Aman",
+      "hint": "penipuan, password, OTP, privasi, hoaks",
+      "theme": "night",
+      "bg": "#0B1B3A",
+      "fg": "#FFFFFF",
+      "accent": "#FF5A4D",
+      "accent2": "#FFD23F",
+      "tagBg": "#FF5A4D",
+      "tagFg": "#FFFFFF",
+      "tag": "AMAN",
+      "pillars": ["aman"]
+    },
+    "promo": {
+      "name": "Brand",
+      "hint": "layanan, daftar, bayar, tim, di balik layar",
+      "theme": "cobalt",
+      "bg": "#1F4FD8",
+      "fg": "#FFFFFF",
+      "accent": "#FFD23F",
+      "accent2": "#3BD5F5",
+      "tagBg": "#FFD23F",
+      "tagFg": "#0B1B3A",
+      "tag": "INFO",
+      "pillars": ["brand"]
+    }
+  },
+  "tags": ["HITUNGAN", "TIPS", "AI", "AMAN", "BALAS KOMEN", "INFO", "TIM"]
+}

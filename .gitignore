@@ -1,0 +1,34 @@
+# Repo ini hanya menyimpan kode: dashboard Studio, skill video-tiktok, skrip bersama, brand contoh,
+# dan dokumentasi. Semua yang lain di folder ini adalah data lokal atau hasil generate (brand/ milikmu,
+# folder proyek video, media/, output/, tools/, catatan/, WORKLOG.md) dan sengaja tidak dilacak.
+# Folder atau file baru di akar hanya ikut git kalau ditambahkan ke daftar putih ini.
+/*
+!/.gitignore
+!/.env.example
+!/LICENSE
+!/README.md
+!/package.json
+!/package-lock.json
+!/Studio Konten.command
+!/brand.example/
+!/studio/
+!/scripts/
+!/skill/
+!/docs/
+
+# Rahasia dan data lokal di dalam folder yang dilacak (API key, database berisi token TikTok & PIN)
+.env
+.env.*
+!.env.example
+studio/data/
+
+# Dependensi dan hasil build/render (bisa dibuat ulang)
+node_modules/
+studio/dist/
+out/
+output/
+# Efek suara sintetis (scripts/sfx.mjs), dibuat ulang otomatis sebelum render
+**/public/sfx/
+
+# Sistem
+.DS_Store
